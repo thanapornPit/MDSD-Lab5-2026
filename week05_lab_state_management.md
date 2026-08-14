@@ -717,7 +717,7 @@ class HomePage extends ConsumerWidget {
 
 | Provider | Riverpod |
 |---|---|
-| ChangeNotifier | StateNotifier  | ตัวจัดการ State
+| ChangeNotifier | StateNotifier  | ตัวจัดการ State |
 
 
 <img width="1297" height="991" alt="image" src="https://github.com/user-attachments/assets/fb162c14-2a9a-453f-a2e1-e5c7205cf667" />
