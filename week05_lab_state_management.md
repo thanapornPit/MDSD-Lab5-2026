@@ -741,11 +741,12 @@ class HomePage extends ConsumerWidget {
 **ข้อกำหนด**
 
 - ต้องตัดสินใจเองว่าค่าคำค้นหาควรเป็น Ephemeral State หรือ App State พร้อมให้เหตุผลสั้น ๆ ไว้ในช่องด้านล่าง
-  ```
+
+```
 ใช้ setState เพราะเป็นข้อมูลชั่วคราวที่ใช้กรองสินค้าเฉพาะในหน้า Home เท่านั้น
 ไม่มีหน้าอื่นต้องใช้ร่วมด้วย จึงใช้ setState ซึ่งเบาและเหมาะสมที่สุดครับ
 
-  ```
+```
 
   <img width="1299" height="893" alt="image" src="https://github.com/user-attachments/assets/bdcc69cf-9451-48d6-a27a-2706709e8a32" />
 
