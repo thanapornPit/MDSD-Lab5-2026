@@ -747,11 +747,6 @@ class HomePage extends ConsumerWidget {
 ไม่มีหน้าอื่นต้องใช้ร่วมด้วย จึงใช้ setState ซึ่งเบาและเหมาะสมที่สุดครับ
 
 ```
-
-  <img width="1299" height="893" alt="image" src="https://github.com/user-attachments/assets/bdcc69cf-9451-48d6-a27a-2706709e8a32" />
-
----
-
 - ถ้าตัดสินใจว่าเป็น Ephemeral State ห้ามใช้ Provider สำหรับฟีเจอร์นี้ ให้ฝึกเลือกใช้เครื่องมือที่เบาที่สุดที่เพียงพอ (`setState` ธรรมดา)
 
 ### โจทย์ที่ 2: ปุ่ม "ล้างรายการโปรดทั้งหมด"
@@ -761,11 +756,19 @@ class HomePage extends ConsumerWidget {
 **ข้อกำหนด**
 
 - ต้องใช้ `context.read` หรือ `context.watch` ให้ถูกต้องตามหลักการ และอธิบายเหตุผลการเลือก ในช่องด้านล่าง
-  ```text
+  ```
+
+context.watch ใช้เช็ค favorites.items.isNotEmpty ใน AppBar เพื่อให้ปุ่มซ่อน/แสดงอัตโนมัติตามข้อมูลจริง
+
+context.read ใช้เรียก context.read<FavoritesModel>().clear() ในปุ่มยืนยันของ Dialog เพราะเป็นการสั่งงานครั้งเดียว ไม่ต้องการ Rebuild ซ้ำ
 
 
   ```
 - ปุ่มต้องแสดงเฉพาะเมื่อมีรายการโปรดอย่างน้อย 1 รายการเท่านั้น (ถ้ารายการว่างอยู่แล้วไม่ต้องแสดงปุ่มนี้)
+
+  
+
+  ---
 
 ### โจทย์ที่ 3 (ท้าทายเพิ่ม ไม่บังคับ)
 
@@ -776,3 +779,11 @@ class HomePage extends ConsumerWidget {
 
 
 ```
+
+## โจทย์ที่ 1
+
+<img width="1299" height="893" alt="image" src="https://github.com/user-attachments/assets/bdcc69cf-9451-48d6-a27a-2706709e8a32" />
+
+## โจทย์ที่ 2
+
+
