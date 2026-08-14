@@ -744,6 +744,10 @@ class HomePage extends ConsumerWidget {
   ```text
 
   ```
+  <img width="1299" height="893" alt="image" src="https://github.com/user-attachments/assets/bdcc69cf-9451-48d6-a27a-2706709e8a32" />
+
+---
+
 - ถ้าตัดสินใจว่าเป็น Ephemeral State ห้ามใช้ Provider สำหรับฟีเจอร์นี้ ให้ฝึกเลือกใช้เครื่องมือที่เบาที่สุดที่เพียงพอ (`setState` ธรรมดา)
 
 ### โจทย์ที่ 2: ปุ่ม "ล้างรายการโปรดทั้งหมด"
