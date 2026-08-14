@@ -766,8 +766,6 @@ context.read ใช้เรียก context.read<FavoritesModel>().clear() ใ
   ```
 - ปุ่มต้องแสดงเฉพาะเมื่อมีรายการโปรดอย่างน้อย 1 รายการเท่านั้น (ถ้ารายการว่างอยู่แล้วไม่ต้องแสดงปุ่มนี้)
 
-  
-
   ---
 
 ### โจทย์ที่ 3 (ท้าทายเพิ่ม ไม่บังคับ)
@@ -775,15 +773,19 @@ context.read ใช้เรียก context.read<FavoritesModel>().clear() ใ
 ทำโจทย์ที่ 1 และ 2 ซ้ำอีกครั้งในโปรเจกต์ทดลอง Riverpod (ส่วนที่ 4) 
 
 > ✅ **Checkpoint 5.1** ถ่ายภาพหน้าจอฟีเจอร์ค้นหาที่กรองสินค้าได้ถูกต้อง และภาพ Dialog ยืนยันการล้างรายการโปรด เขียนอธิบายเหตุผลการเลือกชนิด State ของทั้งสองฟีเจอร์ ในช่องด้านล่าง
-```text
+```t
 
 
 ```
 
+---
 ## โจทย์ที่ 1
 
 <img width="1299" height="893" alt="image" src="https://github.com/user-attachments/assets/bdcc69cf-9451-48d6-a27a-2706709e8a32" />
 
 ## โจทย์ที่ 2
 
+<img width="1293" height="982" alt="image" src="https://github.com/user-attachments/assets/ca5ccb50-7455-4f4c-bf08-3a404a4c406a" />
+
+---
 
