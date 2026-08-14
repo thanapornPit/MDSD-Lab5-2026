@@ -242,9 +242,12 @@ class MyApp extends StatelessWidget {
 
 **คำถาม**: ถ้าต้องเพิ่มหน้าจอ `FavoritesPage` ที่ต้องแสดงรายการที่บันทึกไว้ชุดเดียวกัน แต่ถูก push แยกออกไปเป็นอีก Route หนึ่ง จะเกิดปัญหาอะไรกับโค้ดแบบ Prop Drilling นี้ จงเขียนคำตอบสั้น ๆ 
 
-```text
+ถ้าเพิ่ม FavoritesPage เป็นอีก Route จะเกิดปัญหา เพราะ savedItems และ onSave ถูกเก็บอยู่ใน HomePage และต้องส่งผ่าน Widget ลูกด้วย Prop Drilling ทำให้ไม่สามารถแชร์ข้อมูลไปยัง FavoritesPage ที่เป็นคนละ Route ได้โดยตรง ต้องส่งข้อมูลผ่านหลายชั้นหรือหาวิธีจัดการ State เพิ่ม ทำให้โค้ดซับซ้อนและดูแลยากขึ้น  
 
-```
+
+## รูปงาน
+
+<img width="1917" height="857" alt="image" src="https://github.com/user-attachments/assets/d8ff48ae-3231-40a6-a800-8e02fc357c9b" />
 
 ---
 
